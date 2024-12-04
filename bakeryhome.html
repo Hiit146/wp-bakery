@@ -1,0 +1,634 @@
+<html>
+<head>
+<title>
+    bakery home page
+</title>
+<style type="text/css">
+
+
+body{
+    background-color: rgb(248, 237, 229);
+    color: rgb(185, 113, 58);
+
+}
+#top{
+            
+            margin: 10px 10px 10px 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            /*border:3px solid #000000;*/
+        }
+        #logo{
+            float: left;
+            text-align: center;
+            margin-left: 38%;
+            margin-bottom: 10px;
+            /*border:3px solid #000000;*/
+            
+        }
+        #accart{
+            
+            text-align: end;
+            margin-top: 20px;
+            /*border:3px solid #000000;*/
+        }
+        #centre2{
+            text-align: center;
+            /*border:3px solid #000000;*/
+        }
+        
+nav{ 
+    clear: both; 
+    color: #ffffff; 
+    height: 30px;
+    margin-top: 100px;
+    margin-right: 25px;
+    /*border: 3px solid black;*/
+    }
+   nav ul { 
+    margin: 10px; 
+    padding: 5px 0px 5px 30px;
+    /*border: 3px solid black;*/
+    } 
+    nav li{
+        display: grid;
+        text-align: center;
+        gap: 100px;
+        margin: 40px;
+    }
+   
+   nav li a {
+    color: rgb(185, 113, 58);
+    text-decoration: none;} 
+   nav li a:hover, nav li a.current { 
+    color: #000000;}
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    #account{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(185, 113, 58);
+        text-decoration: none;
+        margin-right: 20px;
+        justify-content: center;
+    }
+    #lhr{
+        float: left;
+        /*border: 3px solid black;*/
+        height: 200px;
+        width: 400px;
+
+    }
+    #rhr{
+        float: right;
+        /*border: 3px solid black;*/
+        height: 200px;
+        width: 400px;
+    }
+    #cart{
+        
+        float: right;
+        transform: translate(0px,-10px);
+        
+        padding-bottom: 30px;
+    }
+    #uppermiddle{
+        float: left;
+    }
+    #lowermiddle{
+        float: left;
+    }
+    
+    
+    
+    /*aniket*/
+    
+    /* {
+            box-sizing:border-box;
+            }*/
+            /*
+            #umright{
+                float: right;
+            }*/
+            /*
+            .column img{
+                
+                width: 400px;
+                display: flex;
+                padding: 10px;
+            }
+            
+            .column {
+                display: flexbox;
+            float:left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+            text-align: center;
+            font-family: PP Neue World, serif;
+            color: #aa8c50;         
+            }
+            */
+            .row {
+      display: flex;
+      justify-content: space-between; 
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      font-family: PP Neue World, serif;
+      color: #aa8c50;
+    }
+
+    .column img {
+      max-width: 100%; 
+      height: auto; 
+      display: block; 
+      margin-bottom: 10px; 
+    }
+
+    .column h2 {
+      margin-bottom: 5px; 
+    }            
+
+            .headingfont{
+                margin: 10px 10px 10px 10px;
+            margin-bottom: 20px;
+                color: rgb(185, 113, 58);
+                font-size: 30px;
+            }
+            hr.colwidth {
+                width: 90%;
+                border: 1px solid rgb(185, 113, 58);
+            }
+            a{
+                color: rgb(147, 89, 45);
+            }
+            #headid1{
+                padding-left: 150px;
+            }
+            #paraid1{
+                width: 600px;
+                
+                text-align: center ;
+                float: left;
+                padding-left: 25px;
+                
+            }
+            #headid2{
+                text-align: right;
+                padding-right: 50px;
+            }
+            #paraid2{
+                width: 600px;
+                
+                text-align: center ;
+                float: right;
+                padding-right: 60px;
+                
+            }
+            #insidepic{
+                float: right;
+                padding-right: 30px;
+            }
+            #pastrypic{
+
+                float:left;
+                padding-top: 30px;
+                padding-left: 75px;
+                padding-bottom: 30px;
+            }
+            #weddingcake{
+                float: left;
+                padding-left: 30px;
+            }
+            #cakepic{
+
+                float:right;
+                padding-top: 30px;
+                padding-right: 100px;
+                padding-bottom: 30px;
+            }
+            #imgmarq{
+                width: 60px;
+                padding-left: 300px;
+                text-align: center;
+            }
+            /*aditya*/
+            /* Subscribe Section */
+        #lower{
+            float: left;
+            
+            margin-left: 12.5%;
+            
+        }
+
+        .subscribe-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .subscribe-container h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="email"] {
+            width: 45%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #b59a72;
+            background-color: transparent;
+            font-size: 16px;
+            color: #b59a72;
+        }
+        input[type="submit"] {
+            background-color: transparent;
+            border: none;
+            color: #b59a72;
+            font-size: 18px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .checkbox-container {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #8a7964;
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #f5f0ea;
+            padding: 40px 20px;
+            border-top: 1px solid #e0d6ca;
+            position: relative;
+        }
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 20px;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #8a7964;
+        }
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #b59a72;
+        }
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #b59a72;
+        }
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #8a7964;
+        }
+        .footer-logo {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .footer-line {
+            border-top: 1px solid #e0d6ca;
+            margin: 20px 0;
+        }
+</style>
+
+</head>
+<body>
+<div id="top">
+    <p id="centre2">
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/de/0/0f/Demel_logo.svg" alt="logo" width="300" height="150">
+    </p>
+    <div id="accart">
+    
+    <a  id="account" href="/checkout">ACCOUNT</a>
+    <div id="cart"><img id="cartimg" src="https://cdn.icon-icons.com/icons2/2582/PNG/512/shopping_bag_icon_153998.png" alt="open mini basket" width="40px" height="40px"></div>
+    
+    </div>
+</div>
+<header>
+    <nav>
+        <ul>
+            <li><a href="">
+                <div class="dropdown">
+                    <span>SHOP></span>
+                    <div class="dropdown-content">
+                        <p>Products</p>
+                    </div>
+                  </div>
+                </a>
+            </li>
+            <li><a href="/aboutus">OUR STORY</a></li>
+            <li><a href="/gallery">Café</a></li>
+        </ul>
+    </nav>
+</header>  
+<div id="lhr">
+    <img src="https://static.vecteezy.com/system/resources/previews/027/187/917/original/gold-and-luxury-under-line-png.png" width="400px" height="200px">
+ 
+</div>
+<div id="rhr">
+     <img src="https://static.vecteezy.com/system/resources/previews/027/187/917/original/gold-and-luxury-under-line-png.png" width="400px" height="200px">
+ 
+</div>  <!--
+<div style="display: flex; justify-content: space-between;">
+    <div>
+        <img src="leftm.png" width="45" style="padding: 10px; cursor: pointer;">
+    </div>
+    <div>
+        <img src="logo.png" width="120" style="cursor: pointer;">
+    </div>
+    <div>
+        <img src="search.png" width="45" style="padding-right: 15px; cursor: pointer;">
+        <img src="cart.png" width="48" style="cursor: pointer;">
+    </div>
+</div>
+-->
+<div id="uppermiddle">
+<!--
+<div style="margin-left: auto; font-weight: 400; text-transform: uppercase; font-family: PP Neue World, serif; color: #aa8c50;
+    text-align: center; font-size: larger;">
+    <h1>
+        VienneseSince 
+    </h1>
+    <h1>
+        Confectionery Art 
+    </h1>
+    <h1 style="top: -45px;">
+        Since 1786
+    </h1>
+</div>
+<div style="text-align: center; padding-bottom: 500px;">
+    VIDEO
+</div>
+<div style="display: flex; justify-content: center;">
+    <img src="logo2.png" width="120px">
+</div>
+<div style="text-align: center; font-family: PP Neue World, serif;padding-top: 50px; color: #aa8c50; padding-left: 200px; padding-right: 200px; padding-bottom: 100px;
+font-weight: 200; font-size: 25px;">
+    Welcome to Demel - home of the finest cakes, chocolates and sweets in the heart of Vienna. A cultural and culinary institution, 
+    our traditional coffee house has been tempting locals and travellers alike since 1786.
+    <div style="padding-top: 100px;">
+        <h1>SHOP</h1>
+    </div>
+</div>
+
+<div class="row">
+<div class="column">
+    <img src="https://www.demel.com/cdn/shop/files/menu_Chocolate.jpg?v=1654762237&width=550" alt="image1">
+   <div class="img1">
+    <h2>SHOP</h2>
+    <p>SCHOLADE</p>
+   </div> 
+    
+</div>
+<div class="column">
+    <img src="https://www.demel.com/cdn/shop/files/menu_BakedGoods.jpg?v=1653641323&width=550" alt="image2">
+    <h2>SHOP</h2>
+    <p>CAKES & BAKERY</p>
+</div>
+<div class="column" id="umright">
+    <img src="https://www.demel.com/cdn/shop/files/menu_GiftCards.jpg?v=1653641323&width=550" alt="image3">
+    <h2>SHOP</h2>
+    <p>VOUCHERS</p>
+</div>
+</div>
+
+
+<div style="display: flex; justify-content: space-between;">
+            <div>
+                <img src="leftm.png" width="45" style="padding: 10px; cursor: pointer;">
+            </div>
+            <div>
+                <img src="logo.png" width="120" style="cursor: pointer;">
+            </div>
+            <div>
+                <img src="search.png" width="45" style="padding-right: 15px; cursor: pointer;">
+                <img src="cart.png" width="48" style="cursor: pointer;">
+            </div>
+        </div>
+        -->
+        <div style="margin-left: auto; font-weight: 400; text-transform: uppercase; font-family: PP Neue World, serif; color: #aa8c50;
+            text-align: center; font-size: larger;">
+            <h1>
+                Viennese
+            </h1>
+            <h1>
+                Confectionery Art 
+            </h1>
+            <h1 style="top: -45px;">
+                Since 1786
+            </h1>
+        </div>
+        <div style="text-align: center; padding-bottom: 500px;">
+            
+            <iframe 
+        width="100%" 
+        height="600" 
+        src="https://www.youtube.com/embed/2ESaVPLcQuQ?autoplay=1&mute=1&loop=1&playlist=2ESaVPLcQuQ" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+        </iframe>
+            
+            
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img src="https://www.demel.com/cdn/shop/files/text-media-logo.png?v=1654590323&width=195" width="120px">
+        </div>
+        <div style="text-align: center; font-family: PP Neue World, serif;padding-top: 50px; color: #aa8c50; padding-left: 200px; padding-right: 200px; padding-bottom: 100px;
+        font-weight: 200; font-size: 25px;">
+            Welcome to Demel - home of the finest cakes, chocolates and sweets in the heart of Vienna. A cultural and culinary institution, 
+            our traditional coffee house has been tempting locals and travellers alike since 1786.
+            <div style="padding-top: 100px;">
+                <h1>SHOP</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <img src="https://www.demel.com/cdn/shop/files/menu_Chocolate.jpg?v=1654762237&width=550" alt="image1">
+              <h2>SHOP</h2>
+              <p>SCHOLADE</p>
+            </div>
+            <div class="column">
+              <img src="https://www.demel.com/cdn/shop/files/menu_BakedGoods.jpg?v=1653641323&width=550" alt="image2">
+              <h2>SHOP</h2>
+              <p>CAKES & BAKERY</p>
+            </div>
+            <div class="column">
+              <img src="https://www.demel.com/cdn/shop/files/menu_GiftCards.jpg?v=1653641323&width=550" " alt="image3">
+              <h2>SHOP</h2>
+              <p>VOUCHERS</p>
+            </div>
+          </div>
+
+
+</div>
+
+<div id="lowermiddle">
+<div class="headingfont">
+    <h1 id="headid1">OUR CAFE</h1>
+    <p id="paraid1">Escape from reality and relax in the sanctuary of our bakery and coffee house. Our café is rich in history and culture and offers a wide selection of delicious cakes, pastries and desserts.</br><a href="">Visit Us</a></p>
+    
+    <img id="insidepic" src="https://i.ytimg.com/vi/7p8VS02C6xw/maxresdefault.jpg" width="500px" height="500px">
+    <img id="pastrypic" src="https://www.loomlightdesign.com/cdn/shop/articles/bakery-lighting-ideas_1024x1024.png?v=1706538821" width="500px" height="500px">
+</div>
+<div style="clear: both;"></div>
+
+<hr class="colwidth">        
+
+<div class="headingfont">
+<h1 id="headid2">INDIVIDUAL ORDERS</h1>
+<p id="paraid2">Whether a big ball or an intimate wedding, leave it to the talent of our confectioners to create your individual cake for every possible occasion.</br><a href="">Discover More</a></p>
+<img id="weddingcake" src="https://i.pinimg.com/originals/a5/69/87/a5698737668210e1849082c74b776f23.jpg" width="500px" height="500px">
+<img id="cakepic" src="https://liliyum.com/cdn/shop/files/chocolatefudgecake_2400x.jpg?v=1687780285" width="500px" height="500px">
+</div>
+<div style="clear: both;"></div>
+
+<hr class="colwidth">
+
+<marquee width="100%" direction="left" height="200px">
+<img src="https://theobroma.in/cdn/shop/files/EgglessDutchTrufflePastry.jpg?v=1711099798" width="200" height="200">
+<img src="https://www.fabmood.com/inspiration/wp-content/uploads/2020/03/birthday-cake-ideas-16.jpg" width="200" height="200">
+<img src="https://thundersbakery.ie/wp-content/uploads/2022/10/CC0A7047-scaled.jpg" width="200" height="200">
+<img src="https://www.eatingwell.com/thmb/ShRWIxbTEC5S_zi0UBAMex6fcCk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AppleTurnovers-Beauty-01-d37f9e295a334b3084574a099531086a.jpg" width="200" height="200">
+<img src="https://theloopywhisk.com/wp-content/uploads/2021/01/Blueberry-Cheesecake_730px-featured.jpg" width="200" height="200">
+<img src="https://www.allrecipes.com/thmb/p4f6RaeEnKTJyE4PVm9dzyMKUMc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-636266048-2000-4fe716c6d4584ec4b6ccab88125d4cef.jpg" width="200" height="200">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZbFsjXUYpyhbFjcadH0nHBsAgEdAeNbOZA&s" width="200" height="200">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuVtkHNS7wBWNwDPyKphS0s2l9TlrOyUvqlg&s" width="200" height="200">
+</marquee>
+
+<hr class="colwidth">
+</div>
+<div id="lower">
+<!-- Subscribe Section -->
+<div class="subscribe-container">
+    <h2>SUBSCRIBE FOR TASTY UPDATES</h2>
+    <form action="#">
+        <input type="text" name="name" placeholder="NAME">
+        <input type="email" name="email" placeholder="EMAIL">
+        <input type="submit" value="SUBMIT">
+    </form>
+    <div class="checkbox-container">
+        <label>
+            <input type="checkbox" name="consent">
+            I consent to Demel sending me emails for advertising purposes.
+        </label>
+        <p>
+            The personal data specified in the fields, in particular name and email address, are required solely to provide you updates and marketing. If you agree to the following purposes of use, please tick the checkbox accordingly. If you do not want to give your consent, please leave the checkbox empty.
+        </p>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Demel</h3>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Cafe</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Imprint</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Custom Cakes</a></li>
+                <li><a href="#">Whistleblowing</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Café</h3>
+            <p>Address:<br>Kohlmarkt 14<br>1010 Wien Austria</p>
+            <p>T. +43 (1) 535 17 17 - 0<br>E. wien@demel.com</p>
+            <p>We unfortunately do not take reservations</p>
+        </div>
+        <div class="footer-column">
+            <h3>Opening Hours</h3>
+            <p>Daily<br>10:00 - 19:00</p>
+            <p>Kaiserschmarrn<br>10:00 - 19:00</p>
+        </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-bottom">
+        <p>© 2024 K. U. K. Hofzuckerbäcker Ch. Demel's Söhne GmbH</p>
+        <p>BY NATURAILY</p>
+    </div>
+    <div class="footer-logo">
+        <img src="https://www.demel.com/cdn/shop/files/text-media-logo.png?v=1654590323&width=195" alt="Logo" height="50"> <!-- Replace with the actual logo source -->
+    </div>
+</footer>
+</div>
+</body>
+</html>
